@@ -5,6 +5,8 @@ const redact = require('redact-object');
 const Bot = require('./lib/bot');
 const Config = require('./lib/config');
 
+require('./lib/utils');
+
 let config;
 
 /**

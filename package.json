@@ -26,7 +26,8 @@
     "moment": "^2.10.3",
     "redact-object": "^1.0.1",
     "request": "^2.71.0",
-    "winston": "^2.1.1"
+    "winston": "^2.1.1",
+    "yahoo-finance": "^0.2.12"
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
