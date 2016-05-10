@@ -154,7 +154,7 @@ historical $AAPL 2016-04-01 2016-05-01
 
 The Analysis can be called using `analyze` or `a` and the symbol(s) to look up.  The goal is to keep this command as non opinionated as possible, but there are certain thresholds that had to be defined.  At some point, these thresholds may be moved to a config file and you can define your own thresholds to customize this to your own trading preferences.  The return payload for this function will provide a wide array of data from current price, current volume vs average volume, support and resistance levels, trending, and other data points used to provide a quick heads up analysis of a stock.
 
-**Triggers:** `analyze`, `a`
+**Triggers:** `analyze`, `a`  
 **Multiple:** Yes
 
 Example usage
