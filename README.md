@@ -150,7 +150,7 @@ historical $AAPL 2016-04-01
 historical $AAPL 2016-04-01 2016-05-01
 ```
 
-#### Analysis (*Incomplete*)
+#### Analysis
 
 The Analysis can be called using `analyze` or `a` and the symbol(s) to look up.  The goal is to keep this command as non opinionated as possible, but there are certain thresholds that had to be defined.  At some point, these thresholds may be moved to a config file and you can define your own thresholds to customize this to your own trading preferences.  The return payload for this function will provide a wide array of data from current price, current volume vs average volume, support and resistance levels, trending, and other data points used to provide a quick heads up analysis of a stock.
 
@@ -169,7 +169,7 @@ analyze $AAPL
 
 I'd like to take a few moments to shout out to the various people and tools that provided inspiration for this bot.
 
-* [Shaun Burdick's Slack Game Bot](https://github.com/shaunburdick/gamebot#configjs) for providing the boilerplate code for setting up a Slack RTM bot
+* [Shaun Burdick's Slack Game Bot](https://github.com/shaunburdick/gamebot) for providing the boilerplate code for setting up a Slack RTM bot
 * [Quotr](https://github.com/andrerpena/quotr) for providing the base inspiration for the bot
 * [Botkit](https://github.com/howdyai/botkit) for providing the base lib for working with the Slack RTM API
 * [Slack](https://slack.com/) for providing an incredibly awesome and easy to use API
