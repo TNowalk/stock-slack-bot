@@ -34,6 +34,7 @@ const config = {
     token: 'xoxb-your-token-goes-here',
     autoReconnect: true,
   },
+  port: 3000,
 };
 
 module.exports = config;
@@ -46,6 +47,7 @@ Alternatively, you can use environmental variables.  The bot will use environmen
 ```
 SLACK_TOKEN=xoxb-your-token-goes-here
 SLACK_AUTO_RECONNECT=true
+PORT=true
 ```
 
 Finally, run the app
