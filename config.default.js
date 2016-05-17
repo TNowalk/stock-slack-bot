@@ -5,6 +5,7 @@ const config = {
     token: 'xoxb-Your-Token',
     autoReconnect: true,
   },
+  port: 3000,
 };
 
 module.exports = config;

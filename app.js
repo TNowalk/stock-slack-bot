@@ -1,9 +1,10 @@
 'use strict';
 
-const logger = require('./lib/logger')();
 const redact = require('redact-object');
-const Bot = require('./lib/bot');
+const express = require('express');
+const logger = require('./lib/logger')();
 const Config = require('./lib/config');
+const Bot = require('./lib/bot');
 
 require('./lib/utils');
 
@@ -34,3 +35,11 @@ logger.info('Using the following configuration:', redact(config, ['token', 'pass
 
 const bot = new Bot(config);
 bot.start();
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.listen(config.port);
