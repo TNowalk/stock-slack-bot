@@ -165,6 +165,34 @@ analyze $AAPL
 
 !["Analyze Screenshot"](./assets/analyze-screenshot.png)
 
+
+#### Variance
+
+The Variance command can be triggered using either `variance` or `v` and is used to get the price variation between two dates.  Similar to the Historical command, you can pass the timeframe in a number of ways.  The returned data includes the open price for the first date, close price for the second date, the price variance between the two as well as the highest and lowest values for the timeframe.
+
+**Triggers:**`variance`, `v`  
+**Multiple:** No  
+**Options:**  
+* `30d` or `30 days` - Last 30 days
+* `<date>` - Results from date until today
+* `<date> <date>` - Results from first date to second date
+
+Example usage
+
+```
+variance $AAPL 30 days
+```
+
+!["Variance Screenshot"](./assets/variance-screenshot.png)
+
+Other examples
+
+```
+variance $AAPL 45d
+variance $AAPL 2016-04-01
+variance $AAPL 2016-04-01 2016-05-01
+```
+
 ### Acknowledgements
 
 I'd like to take a few moments to shout out to the various people and tools that provided inspiration for this bot.
