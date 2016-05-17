@@ -24,6 +24,8 @@
     "async": "^2.0.0-rc.3",
     "botkit": "^0.1.1",
     "express": "^4.13.4",
+    "markdown-serve": "^0.3.2",
+    "marked": "^0.3.5",
     "moment": "^2.10.3",
     "redact-object": "^1.0.1",
     "request": "^2.71.0",
