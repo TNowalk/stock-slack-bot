@@ -58,7 +58,6 @@ npm run
 
 ### Things to Do
 
-* Add help command
 * Add more commands
 * Annotate the codebase
 * Add tests and coverage reports (badges)
@@ -88,7 +87,23 @@ Most commands support multiple symbols and will return a formatted message for e
 
 #### Help
 
-Not implemented yet
+Provide helpful text for how to use the commands.  Will automatically expand the list of commands as new commands are installed.
+
+Example usage
+
+```
+help
+```
+
+!["Quote Screenshot"](./assets/help-bot-screenshot.png)
+
+Example usage for help with a specific command
+
+```
+help quote
+```
+
+!["Quote Screenshot"](./assets/help-command-screenshot.png)
 
 #### Snapshot (Passive)
 
