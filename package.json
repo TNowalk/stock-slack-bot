@@ -1,6 +1,6 @@
 {
   "name": "stock-slack-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Slackbot for getting Stock prices",
   "main": "app.js",
   "private": true,
