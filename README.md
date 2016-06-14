@@ -12,7 +12,7 @@ Clone this repository
 git clone https://github.com/TNowalk/stock-slack-bot.git && cd $_
 ```
 
-Install node modules
+Install node modules (Note: Node v6+ required)
 
 ```
 npm install
@@ -95,7 +95,7 @@ Example usage
 help
 ```
 
-!["Quote Screenshot"](./assets/help-bot-screenshot.png)
+!["Help Bot Screenshot"](./assets/help-bot-screenshot.png)
 
 Example usage for help with a specific command
 
@@ -103,7 +103,7 @@ Example usage for help with a specific command
 help quote
 ```
 
-!["Quote Screenshot"](./assets/help-command-screenshot.png)
+!["Help Command Screenshot"](./assets/help-command-screenshot.png)
 
 #### Snapshot (Passive)
 
@@ -209,6 +209,45 @@ variance $AAPL 45d
 variance $AAPL 2016-04-01
 variance $AAPL 2016-04-01 2016-05-01
 ```
+
+#### Watchlist
+
+The Watchlist command is triggered using `watchlist`, `wl`, or `w`.  This command is used to add or remove symbols from a user's watchlist.  The eventual goal is to use the watchlist to perform other actions, such as bulk snapshots of all symbols on the watchlist, automated alerts (#4, #7, #8, & #15).
+
+**Triggers:**`watchlist`, `wl`, `w`  
+**Multiple:** No  
+
+Example usage with no watched symbols
+
+```
+watchlist
+```
+
+!["Watchlist Default Screenshot"](./assets/watchlist-default-screenshot.png)
+
+Example usage for adding a symbol
+
+```
+watchlist add $AAPL $SPY $GOOG
+```
+
+!["Watchlist Add Screenshot"](./assets/watchlist-add-screenshot.png)
+
+Example usage for adding a symbol
+
+```
+watchlist remove $GOOG
+```
+
+!["Watchlist Remove Screenshot"](./assets/watchlist-remove-screenshot.png)
+
+Example usage for listing symbols
+
+```
+watchlist
+```
+
+!["Watchlist List Screenshot"](./assets/watchlist-list-screenshot.png)
 
 ### Acknowledgements
 

@@ -34,3 +34,8 @@ node_modules
 
 # Local configs
 /config.js
+
+# Local Data Store
+/data
+
+/nodemon.json
