@@ -249,6 +249,18 @@ watchlist
 
 !["Watchlist List Screenshot"](./assets/watchlist-list-screenshot.png)
 
+##### Watchlist Alerts
+
+Symbols that are in a user's watchlist/portfolio will generate automatic alerts when certain criteria are met.  Users will be alerted once per day for each type of alert.
+
+###### Price Movement
+
+When a stock's current price is ±5% than the open price, the bot will direct message all users watching the stock.  If the price gains/loses 5% from the open price and keeps going in the same direction, the user will receive a single alert.  A user can be notified multi times if the price fluctuates.  For example, if the price falls below -5% from the open price the user will receive a notification.  If the price climbs and again falls below -5% the user will not receive a second notification.  If the price then rises over 5% from the open price the user will receive a new notification for the price rise and the notification for the price fall will be reset, meaning if the price once again falls back below -5% from the open price the user will receive a third notification and the price rise notification is reset.
+
+Prices are checked every 5 minutes.
+
+!["Watchlist Price Alert"](./assets/watchlist-price-alert.png)
+
 ### Acknowledgements
 
 I'd like to take a few moments to shout out to the various people and tools that provided inspiration for this bot.
